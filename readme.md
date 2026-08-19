@@ -1,4 +1,4 @@
-[![Playwright Tests](https://github.com/FabioGVL/AutomationExercise---Playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/FabioGVL/AutomationExercise---Playwright/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/playwright.yml)
 # Automação de Testes E2E - Automation Exercise
 
 ## Escopo do Produto
@@ -149,7 +149,7 @@ Você pode obter os arquivos do projeto de duas formas.
 Abra o terminal e execute o comando abaixo para clonar o repositório:
 
 ```bash
-git clone https://github.com/FabioGVL/AutomationExercise---Playwright.git
+git clone https://github.com/FabioGVL/AutomationExercise-Playwright.git
 ```
 
 Em seguida, navegue para dentro da pasta do projeto:
