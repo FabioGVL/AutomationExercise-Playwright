@@ -27,7 +27,7 @@ class PageElements {
     this.loginPasswordInput = page.locator('[data-qa="login-password"]');
     this.loginButton = page.locator('[data-qa="login-button"]');
 
-    // Mensagens de Erro
+    // --- MENSAGENS DE ERRO ---
     this.loginErrorMessage = page.locator('form[action="/login"] p');
     this.signUpErrorMessage = page.locator('form[action="/signup"] p');
 
@@ -40,11 +40,11 @@ class PageElements {
     this.monthsSelect = page.locator('[data-qa="months"]');
     this.yearsSelect = page.locator('[data-qa="years"]');
     
-    // Checkboxes Opcionais
+    // --- CHECKBOXES OPCIONAIS ---
     this.newsletterCheckbox = page.locator('#newsletter');
     this.specialOffersCheckbox = page.locator('#optin');
 
-    // Endereço e Dados Pessoais
+    // --- ENDEREÇO E DADOS PESSOAIS ---
     this.firstNameInput = page.locator('[data-qa="first_name"]');
     this.lastNameInput = page.locator('[data-qa="last_name"]');
     this.companyInput = page.locator('[data-qa="company"]');
@@ -55,7 +55,6 @@ class PageElements {
     this.cityInput = page.locator('[data-qa="city"]');
     this.zipcodeInput = page.locator('[data-qa="zipcode"]');
     this.mobileNumberInput = page.locator('[data-qa="mobile_number"]');
-    
     this.createAccountButton = page.locator('[data-qa="create-account"]');
     this.continueButton = page.locator('[data-qa="continue-button"]');
     this.accountCreatedHeading = page.getByText('Account Created!');
@@ -136,8 +135,6 @@ class PageElements {
     this.orderCommentInput = page.locator('textarea[name="message"]');
     this.placeOrderBtn = page.locator('a[href="/payment"]');
     this.checkoutModalLogin = page.locator('#checkoutModal u:has-text("Register / Login")');
-
-    // CAMPOS DE PAGAMENTO
     this.cardNameInput = page.locator('input[name="name_on_card"]');
     this.cardNumberInput = page.locator('input[name="card_number"]');
     this.cardCvcInput = page.locator('input[name="cvc"]');
