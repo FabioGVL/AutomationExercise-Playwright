@@ -21,7 +21,7 @@ A estratégia foca em garantir a funcionalidade correta e a integridade dos flux
 O projeto foi organizado para garantir a separação entre a lógica de teste e a configuração das requisições, facilitando a manutenção e a escalabilidade.
 
 * **Padrão de Projeto:** Page Object Model (POM) / Actions, garantindo o isolamento dos seletores web.
-* **Tecnologias e Ambiente:** `Playwright` | `JavaScript (ES6+)` | `Node.js` | `Git Actions` | `Git` | `Windows 11` | `Chrome`
+* **Tecnologias e Ambiente:** `Playwright` | `JavaScript (ES6+)` | `Node.js` | `Github Actions` | `Git` | `Windows 11` | `Chrome`
 
 ## Bugs Encontrados e Validações
 
@@ -155,7 +155,7 @@ git clone https://github.com/FabioGVL/AutomationExercise-Playwright.git
 Em seguida, navegue para dentro da pasta do projeto:
 
 ```bash
-cd NomeDoRepositorio
+cd AutomationExercise-Playwright
 ```
 
 ### Opção B: Baixando via ZIP
