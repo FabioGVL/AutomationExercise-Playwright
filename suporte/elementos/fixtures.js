@@ -1,4 +1,3 @@
-// suporte/fixtures.js ou suporte/hooks.js
 import { test as base } from '@playwright/test';
 
 export const test = base.extend({
