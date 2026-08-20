@@ -1,4 +1,4 @@
-[![Playwright Tests](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/AutomationExercise.yml/badge.svg)](https://github.com/FabioGVL/AutomationExercise-Playwright/actions/workflows/AutomationExercise.yml)
 # Automação de Testes E2E - Automation Exercise
 
 ## Escopo do Produto
