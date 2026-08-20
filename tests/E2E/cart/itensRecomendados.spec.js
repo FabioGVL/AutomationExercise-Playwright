@@ -30,14 +30,11 @@ test.describe('Cenários Válidos: Itens Recomendados', () => {
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   await expect(elem.recommendedItemsHeading).toBeVisible();
 
-  // 1. Captura o texto do primeiro produto ativo ANTES do clique
   const itemAntes = await page.locator('#recommended-item-carousel .item.active p').first().textContent();
 
-  // 2. Clica na seta para avançar o carrossel
   const rightControl = page.locator('#recommended-item-carousel .right');
   await rightControl.click();
 
-  // 3. Asserção: O Playwright aguarda automaticamente até que o texto do item ativo MUDE (seja diferente do inicial)
   const itemAtivoDepois = page.locator('#recommended-item-carousel .item.active p').first();
   await expect(itemAtivoDepois).not.toHaveText(itemAntes?.trim() || '');
 });
