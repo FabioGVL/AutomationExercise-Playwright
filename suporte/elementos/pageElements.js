@@ -157,7 +157,7 @@ class PageElements {
 
     // --- OUTRAS FUNCIONALIDADES ---
     this.btnScrollUp = page.locator('#scrollUp');
-    this.tituloHeader = page.getByRole('heading', { name: 'Full-Fledged practice website for Automation Engineers' });
+    this.tituloHeader = page.locator('#slider-carousel .item.active h2');
     this.sliderCarousel = page.locator('#slider');
   }
 }
