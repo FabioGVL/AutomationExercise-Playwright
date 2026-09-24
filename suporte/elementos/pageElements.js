@@ -11,7 +11,7 @@ class PageElements {
     this.navContactUs = page.getByRole('link', { name: 'Contact Us' });
     this.navTestCases = page.getByRole('link', { name: 'Test Cases', exact: true });
     this.navProducts = page.locator('a[href="/products"]');
-    this.navCart = page.getByRole('link', { name: 'Cart' });
+    this.navCart = page.getByRole('link', { name: 'Cart', exact: true });
     this.navLogout = page.getByRole('link', { name: 'Logout' });
     this.navDeleteAccount = page.getByRole('link', { name: 'Delete Account' });
     this.logoHeader = page.locator('.logo a');
