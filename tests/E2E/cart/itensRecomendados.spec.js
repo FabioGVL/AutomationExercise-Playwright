@@ -49,9 +49,24 @@ test.describe('Cenários Válidos: Itens Recomendados', () => {
     await elem.recommendedProductAddToCart.click();
     await elem.continueShoppingButton.click();
 
+    const itemAntes = await page
+      .locator('#recommended-item-carousel .item.active p')
+      .first()
+      .textContent();
+
     await page.locator('#recommended-item-carousel .right').click();
     
-    await page.locator('#recommended-item-carousel .item.active .add-to-cart').first().click();
+    const itemAtivoDepois = page
+      .locator('#recommended-item-carousel .item.active p')
+      .first();
+    
+    await expect(itemAtivoDepois).not.toHaveText(itemAntes?.trim() || '');
+    
+    await page
+      .locator('#recommended-item-carousel .item.active .add-to-cart')
+      .first()
+      .click();
+    
     await elem.viewCartModalLink.click();
 
     await expect(elem.cartContainer).toHaveCount(2);
