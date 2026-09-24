@@ -27,6 +27,7 @@ test.describe('Cenários Válidos: Itens Recomendados', () => {
   test('Test Case 2: Deve navegar entre as telas do carrossel de itens recomendados usando as setas', async ({ page }) => {
   const elem = new PageElements(page);
 
+  await page.goto('/');
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   await expect(elem.recommendedItemsHeading).toBeVisible();
 
@@ -69,6 +70,7 @@ test.describe('Cenários Válidos: Itens Recomendados', () => {
   test('Test Case 5: Deve persistir o produto recomendado no carrinho após navegar para a página de produtos', async ({ page }) => {
     const elem = new PageElements(page);
 
+    await page.goto('/');
     await elem.recommendedItemsHeading.scrollIntoViewIfNeeded();
 
     await elem.recommendedProductAddToCart.click();
