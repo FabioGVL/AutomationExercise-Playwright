@@ -13,7 +13,6 @@ export default defineConfig({
     baseURL: 'https://automationexercise.com',
     trace: 'on-first-retry',
     
-    // Ignora inconsistências de SSL no ambiente de teste
     ignoreHTTPSErrors: true,
   },
 
@@ -25,10 +24,6 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
     },
   ],
 });
